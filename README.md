@@ -7,7 +7,7 @@ Muhammad Brian Subekti 2306256444
 
 ### The screenshot
 
-![Program Output](img\First_img.png)
+![Program Output](img/First_img.png)
 
 When I call `spawner.spawn(async { ... })`, the asynchronous task is merely enqueued for later execution rather than running immediately. The following synchronous call, `println!("Brian's Komputer: hey hey");`, executes right away, printing “hey hey” before the executor ever begins polling the spawned future. Only after dropping the spawner and invoking `executor.run()` does the executor pull tasks off its queue to start processing them.
 
